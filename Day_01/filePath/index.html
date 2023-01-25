@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Testing filePath basics</title>
+  </head>
+  <body>
+    <img src="images/dogzilla.jpg" alt="Dogao" />
+  </body>
+</html>
+
+
+Algumas Regras para aplicar o filePath Corretamente:
+
+1) Para "linkar" o arquivo no mesmo diretório que o script estiver o chamando, simplesmente informe o "(nome do arquivo).(sua extensão)", que neste caso é: dogzilla.jpg 
+
+2) Caso o arquivo estiver em um diretório dentro da pasta do script, é necessário aplicar o nome do diretório e separar o nome do arquivo com um "slash" '/', exemplo: (Nome do Diretório)/(Nome do Arquivo)
+onde neste caso é: images/dogzilla.jpg
+
+3)Caso o arquivo que você deseja estiver num diretório diferente, ou "acima" na hierarquia de pastas, é necessário aplicar um duplo ponto, ou ".." para referênciar uma pasta acima, exemplo:
+../(nome do diretório)/(nome do arquivo). No nosso caso seria algo como ../images/dogzilla.jpg
+
+4) O Windows costuma usar "backslashs" '\'. Contudo, isso não importa durante o desenvolvimento em javascrpt/html.
