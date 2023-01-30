@@ -5,4 +5,50 @@
 
 O css é uma linguagem para "sintetizar" o estilo da página da web. Em outras palavras, ele que irá informar para o navegador as cores, posições, tamanhos e etc de todos os elementos da página.
 
-No nosso caso a cima, fizemos com que todos os elementos da tag 'p' esteja em vermelho
+No nosso caso a cima, fizemos com que todos os elementos da tag 'p' esteja em vermelho.
+
+As opções de estilo no css são bem padrões. No caso, 'color' representará qual a cor que será utilizada na tag em especifico. Poderá ser utilizado tanto o hexadecimal quanto o nome da cor.
+
+p {
+    color: red;
+  }
+  
+O exemplo acima é o código do css para aplicar a coloração vermelha no nosso arquivo html.
+
+Podemos notar que sua estrutura é composta pelo seletor(p), declaração que engloba a propriedade(color) e seu valor(red).
+
+O seletor é o nome da tag que o elemento desejado tem. Neste caso, todos os elementos com a tag 'p' serão colorizados.
+
+A declaração é composta por todas as propriedades e valores dentro de sua chave {}.
+
+A propriedade, como o nome informa, é a propriedade que será estilizada no elemento do html, neste caso foi a cor.
+
+O valor, como o nome informa, é como será feita a mudança de acordo com a propriedade. Neste caso foi red(vermelho)
+
+Existem algumas regras básicas para seguir no css. a primeira é conforme informado anteriormente, toda declaração tem que estar dentro de {}.
+A segunda é que toda propriedade tem que terminar com o ":" que separa seu valor.
+A terceira e ultima é que todo conjunto de propriedade/valor tem que ser terminada com ";"
+
+É possível selecionar varios elementos de um html quando seus nomes são separados por uma virgula "," como indicado no exemplo abaixo:
+
+p,
+li,
+h1 {
+    color: red;
+    width: 500px;
+    border: 1px solid black;
+  }
+
+Existem vários tipos de seletores para informar os elementos de um html, entre eles são:
+
+Nome do Seletor, que foi informado anteriormente.
+
+Seletor de Id, quando o elemento possui um id em sua tag (id="my-id"), assim é necessário indicar como #my-id
+
+Seletores de classe, onde você pode nomear a tag com uma classe (class="my-class") e assim todos os elementos com essa classe terá a mesma modificação. é necessário indicar como .my-class
+
+Seletor de atributo, onde você pode fazer uma modificação de um elemento com um determinado atributo, um exemplo disso é quando utiliza imagem, onde a indicação necessária é img[src], contudo isso seleciona todas
+as img src="myimage.jpg" e não com tag img
+
+Pseudo classe. Somente será aplicado o estilo quando ocorre algum tipo de evento em uma determinada classe, como no exemplo => a:hover, onde só será estilizado nos tags 'a' quando o cursor estiver em cima dele.
+
